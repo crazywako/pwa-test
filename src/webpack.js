@@ -24,7 +24,7 @@ export default class ProjectWebpack {
           config.devServer = {
             ...config.devServer,
             proxy: {
-              '/**': 'http://127.0.0.1:9699',
+              '/api/': 'http://127.0.0.1:9699',
             },
             historyApiFallback: true,
           };
