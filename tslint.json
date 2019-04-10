@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "./node_modules/@pawjs/pawjs/tslint.json"
+  ],
+  "rules": {
+    "max-line-length": [512],
+    "ter-arrow-parens": [false]
+  },
+  "jsRules": {
+    "quotemark": [true, "single", "jsx-double"],
+    "max-line-length": [512],
+    "object-literal-sort-keys": false,
+    "space-before-function-paren": [false, true],
+    "curly": [false, true]
+  }
+
+}

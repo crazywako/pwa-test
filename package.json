@@ -1,0 +1,62 @@
+{
+  "name": "react-pwa",
+  "version": "2.2.5",
+  "description": "A highly scalable, Progressive Web Application foundation with the best Developer Experience (DX).",
+  "scripts": {
+    "start": "pawjs --no-cache --env=development start",
+    "build": "pawjs --no-cache --config=./prod-pawconfig.json --env=production build",
+    "build:demo": "pawjs --no-cache --config=./demo-pawconfig.json --env=production build",
+    "lint": "pawjs lint",
+    "test": "pawjs --no-cache test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "author": {
+    "name": "Atyantik Technologies",
+    "email": "admin@atyantik.com",
+    "url": "https://www.atyantik.com/"
+  },
+  "contributors": [
+    {
+      "name": "Tirth Bodawala",
+      "email": "tirthbodawala@atyantik.com",
+      "url": "https://www.atyantik.com/"
+    },
+    {
+      "name": "Yash Thakur",
+      "email": "thakur.yash514@gmail.com",
+      "url": "http://yashthakur.in/"
+    },
+    {
+      "name": "Ajay Patel",
+      "email": "ajaypatel@atyantik.com",
+      "url": "https://www.atyantik.com/"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@pawjs/image-optimizer": "^2.2.0-beta.0",
+    "@pawjs/pawjs": "^2.4.0-beta.0",
+    "@pawjs/srcset": "^2.1.0-beta.0",
+    "@types/react": "^16.8.10",
+    "@types/react-dom": "^16.8.3",
+    "axios": "^0.18.0",
+    "bulma": "^0.7.4",
+    "cloudinary": "^1.14.0",
+    "eslint-import-resolver-webpack": "^0.11.0",
+    "fork-ts-checker-webpack-plugin": "^1.0.1",
+    "prop-types": "^15.7.2",
+    "snyk": "^1.143.1",
+    "typesafe-actions": "^4.0.0",
+    "universal-fetch": "^1.0.0"
+  },
+  "snyk": true,
+  "devDependencies": {
+    "@pawjs/redux": "^2.2.0-beta.0",
+    "@pawjs/sass": "^2.2.0-beta.0",
+    "@types/react-redux": "^7.0.6",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "webpack-bundle-analyzer": "^3.1.0"
+  }
+}
